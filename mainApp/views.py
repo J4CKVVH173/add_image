@@ -29,9 +29,8 @@ def creat_dir(name1):
     page_number = os.path.join(dir_template_name, "page_number")
     os.makedirs(interim_name, exist_ok=True)
     os.makedirs(os.path.dirname(dir_template_name), exist_ok=True)
-    os.makedirs(os.path.dirname(dir_template_name), exist_ok=True)
 #    os.makedirs(os.path.dirname(page_number), exist_ok=True, mode=0o777)
-    print(dir_template_name)
+    print(os.path.dirname(dir_template_name))
 
 class Test(View):
     def get(self, request):
